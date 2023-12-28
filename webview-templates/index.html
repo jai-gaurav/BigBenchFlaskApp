@@ -1,0 +1,20 @@
+<form action="/evaluate_model" method="post" enctype="multipart/form-data">
+    <label for="models">Select Models:</label>
+    <select name="models" id="models" multiple>
+        <option value="gpt2">GPT2</option>
+        <option value="gpt2-medium">GPT2-Medium</option>
+        <option value="gpt2-large">GPT2-Large</option>
+        <option value="gpt2-xl">GPT2-XL</option>
+    </select>
+    <br>
+    <label for="prompt_input">User Prompt:</label>
+    <input type="text" id="prompt_input" name="prompt_input">
+    <br>
+    <label for="prompt_target">Expected Output:</label>
+    <input type="text" id="prompt_target" name="prompt_target">
+    <br>
+    <label for="dataset_json">Select example json:</label>
+    <input type="file" id="dataset_json" name="dataset_json">
+    <br>
+    <input type="submit" value="Evaluate">
+</form>
